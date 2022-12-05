@@ -1,0 +1,9 @@
+# Project exclude paths
+/cloud_api-commons/target/
+/cloud_consumer-order80/target/
+/cloud_consumerzk-order80/target/
+/cloud_eureka-server7001/target/
+/cloud_eureka_server7002/target/
+/cloud_provider-payment8001/target/
+/cloud_provider-payment8002/target/
+/cloud_provider-payment8004/target/

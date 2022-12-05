@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud_provider-payment8001" />
+        <module name="cloud_api-commons" />
+        <module name="cloud_provider-payment8002" />
+        <module name="cloud_consumer-order8080" />
+        <module name="cloud_consumerzk-order80" />
+        <module name="cloud_eureka-server7001" />
+        <module name="cloud_eureka_server7002" />
+        <module name="cloud_provider-payment8004" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud_consumer-order80" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
