@@ -17,6 +17,8 @@
         <module>cloud_provider-payment8004</module>
         <module>cloud_consumerzk-order80</module>
         <module>cloud_consumer-feign-order80</module>
+        <module>cloud_provider-hystrix-payment8001</module>
+        <module>cloud_consumer-feign-hystrix-order80</module>
     </modules>
     <packaging>pom</packaging>
 

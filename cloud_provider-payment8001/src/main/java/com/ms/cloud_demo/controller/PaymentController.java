@@ -3,6 +3,7 @@ package com.ms.cloud_demo.controller;
 import com.ms.cloud_demo.entities.CommonResult;
 import com.ms.cloud_demo.entities.Payment;
 import com.ms.cloud_demo.service.PaymentService;
+import jdk.nashorn.internal.runtime.regexp.joni.ast.StringNode;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 @RestController
 @Slf4j
@@ -65,6 +67,16 @@ public class PaymentController {
 
     @GetMapping("/payment/lb")
     public String getPaymentLB() {
+        return serverPort;
+    }
+
+    @GetMapping("/payment/feign/timeout")
+    public String paymentFeignTimeout() {
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return serverPort;
     }
 }
