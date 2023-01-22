@@ -1,0 +1,87 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name: cloud-config-center
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/h-admin/springcloud-config.git
+          search-paths:
+            - springcloud-config
+          strict-host-key-checking: false
+          ignore-local-ssh-settings: true
+          private-key:
+            -----BEGIN RSA PRIVATE KEY-----
+            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
+            -----END RSA PRIVATE KEY-----
+          username: 709820314@qq.com
+          password: hyt520HUANG
+      label: master
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "bus-refresh"
