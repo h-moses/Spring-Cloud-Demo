@@ -25,6 +25,15 @@
         <module>cloud_config-client3355</module>
         <module>cloud_config-client3366</module>
         <module>cloud-stream-rabbitmq-provider8801</module>
+        <module>cloud-stream-rabbitmq-consumer8802</module>
+        <module>cloud-stream-rabbitmq-consumer8803</module>
+        <module>cloud-alibaba-provider-payment9001</module>
+        <module>cloud-alibaba-provider-payment9002</module>
+        <module>cloud-alibaba-consumer-order83</module>
+        <module>cloud-alibaba-config-nacos-client3377</module>
+        <module>cloud_alibaba_sentinel_service8401</module>
+        <module>cloud-alibaba-provider-payment9003</module>
+        <module>cloud-alibaba-provider-payment9004</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -76,6 +85,11 @@
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>
                 <version>${mybatis.spring.boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>2.1.0.RELEASE</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

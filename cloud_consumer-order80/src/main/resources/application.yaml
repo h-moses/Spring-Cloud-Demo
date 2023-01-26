@@ -12,3 +12,9 @@ eureka:
 spring:
   application:
     name: cloud-order-service
+
+  zipkin:
+    base-url: http://localhost:9001
+  sleuth:
+    sampler:
+      probability: 1

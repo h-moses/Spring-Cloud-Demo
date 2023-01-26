@@ -3,7 +3,6 @@ package com.ms.cloud_demo.controller;
 import com.ms.cloud_demo.entities.CommonResult;
 import com.ms.cloud_demo.entities.Payment;
 import com.ms.cloud_demo.service.PaymentService;
-import jdk.nashorn.internal.runtime.regexp.joni.ast.StringNode;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
@@ -78,5 +77,10 @@ public class PaymentController {
             e.printStackTrace();
         }
         return serverPort;
+    }
+
+    @GetMapping("/payment/zipkin")
+    public String paymentZipkin() {
+        return "hello, zipkin";
     }
 }
